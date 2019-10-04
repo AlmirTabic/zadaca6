@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.header {
+	height: 70px
+	background-color:white;
+	
+}
+body {
+	font-family: Sans-Serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: auto;
+	margin-left: auto;
+	width: 950px;
+	height: 70px;
+	
+}
+.logo {
+	height: 70px;
+	width: 250px;
+	}
+
+.topnav {
+	width: 700px;
+	height: 70px;
+
+}
+.topnav {
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav input[type=text] {
+  overflow: hidden;
+  color: black;
+  background-color: lightgray;
+  float: right;
+  padding: 6px;
+  margin-top: 20px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+  }
+.photos {
+	height: 500px;
+	width: 100%;
+	background-image: url(https://www.trailover.it/wp-content/uploads/2018/11/Lago-Sorapis-3840x500.jpg);
+	background-size: cover;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 70px;
+    border: 1px solid #ae7a0d;
+    border-radius: 8px;
+    background: #ffc815;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffc815), to(#ae7a0d));
+    background: -moz-linear-gradient(top, #ffc815, #ae7a0d);
+    background: linear-gradient(to bottom, #ffc815, #ae7a0d);
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    border: 1px solid white;
+    background: #fff019;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff019), to(#d19210));
+    background: -moz-linear-gradient(top, #fff019, #d19210);
+    background: linear-gradient(to bottom, #fff019, #d19210);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #ae7a0d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ae7a0d), to(#ae7a0d));
+    background: -moz-linear-gradient(top, #ae7a0d, #ae7a0d);
+    background: linear-gradient(to bottom, #ae7a0d, #ae7a0d);
+}
+.button:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEyElEQVRIia2Va2xTZRjHf+fSrbRbYTh3010YY0Ecg8UoIETJ5APRDAYqfFliMqIJIpcgiSFZREOMH4xRol8MJCgYYzSBqENuMcIYlxmGLhtzA9Z1967b2q7t2p6257x+OGdQjSEu8UmenJw37/n/n///fc77KMwx6isoWFvI6ifmkyuniI1rxOaK8dC4tC//uBi7Ioy+MyJw6UOt8/PNV7/bntlYaMf+vxBc2F34vZgZFiI8JER4WIioV4jRy6Lv2JbeT2pZ98/98pwZhAAtaGUAZnxgy6F8yweVr7/73q8nXnE0pm9X567BgEQIdAMQJqHJjHPJBvXl3frRYPiwb895mgGUucI3rBDbyueHl0naFGS6QE+BHgM9DqkotgUlUnFWZEPbjd4vh2aIKtW5ZD1XREW3n4BZ3sNj06LkNqevc1mkqwXJfY7MhY+APQdSUUjFITlDdmGpMz9w1fjmlvaL8tlm9jUdbDi94/lHG1+rkVZvLJ5eoM2IaE8Av+nB32NtKetddparKmo8rpFy/4azsAhsDkjFTDUCpITv8WNnh76QTm7lcMPeXU04S028RIDkpJuhwUHP9NhQq7t/9OLxNtF6pg+PpTAXKFuaS+UbT7HjxSXUFpcX4Fi3E3TdKkmgjXexcc/pFWo0QRK/G2Tn/YJtOaWUL1xURo1RVpMKNtS9OsTw6Mi98KS35fadiYtHr9B6aZBb+8/z82CIQ++4vPsc2iBIDvPQdci021icS4l628c9ERxAyi4GYTxwRRZmE8uCjNxCyvMeq0A2KlbUTjdu3e412tu7Lqx7P/TSp9c5tHE56wsM/0rQTAJDgqk2ZAVZvTpMT8Q/QXZewCSQhNlbae1nPoRpkAx2yS9nTIUqzTdCsmteD7K2El0zwf3doA2AAmq3l2GfPxTK1vwuMB6AK2ngzKoxEKN38d0YJzxjdlzTC1Q9syZ/E8Y06EkI3QPNDzKkkhhqzCA4FdQGFwe6q8jKBRRThSxM/PtKdPQ+D972KKMaoa86+OhoA7X1dTnH5+dlOtD6IDaBeQAQ9cFIiEkVSPijuImPVWF4weEEuwMkG8hSWoPqiDxw1KgY4yLYtFp5u3yRrVJRk5C4a9prs0xLwEA/oevDeFSA8QjdqGxCFUAE9AikAFk2U5FAAtUFOTmw6klKEEkQCVNlpln4bMZuQ4ePlnAcnwrQ4eV3AUgq5u2kYlajGlZaa4qVkpVYf4ZhgRuQ6oTREVInOjgCGCrA5X7uxDRwuCwAmykTAWSlrSkWUfodLCwCDZLXwOeGZg9fn/2TFqztdI0x7AsTKivAhQ3ENPjbTVtzykBZDuSnkchpCjQQ/RBphUAcrvho2f8TB60STYKETnAihKfMRrUYg4luGBFEFZAjHuxON2QVQeZSkAsAO4gU6JMQvQPTg5AQ0Ozh1IEf2WsYeGcFzs6D1PQUbr2Lat8E9KfwHjjHTv8M8bfWsmtNEbX5fhxqG6jzQLE6mRREkhi3/PQcu8mR5k6+BUJpBj4YOCMxusaD1P8RpevN0+wYmOImYOw+RWuWnWV1VdSuKuHpXCcFGSpyWCPUO0HPD51c7vVyDfDxsOu+rppnP67npCODCv59lMqmObisdDDHiSgDGXP54L/EX5ztNQw3UOoSAAAAAElFTkSuQmCC") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+
+.content {
+	color: rgba(255, 255, 255, 0.7);
+	margin-right: auto;
+	margin-left: auto;
+	width: 950px;
+	height: 500px;
+	font-size: 18px;
+}
+
+#text {
+	padding-left: 50px;
+	width: 350px;
+	height: 500px;
+}
+
+.question {
+	width: 950px;
+	height: 70px;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 70px;
+	font-size: 20px;
+	color: gray;
+	border-bottom: 3px lightgray solid;
+}
+.bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 950px;
+	height: 350px;
+	margin-right: auto;
+	margin-left: auto;
+	color: gray;
+}
+
+.magnificents, .people, .dzeko {
+	height: 400px;
+	width: 230px;
+	border-bottom: 15px solid lightgray;
+	
+}
+.magnificents img {
+	margin: 20px;
+	height: 60px;
+	width: 60px;
+}
+.people img {
+	margin: 20px;
+	height: 60px;
+	width: 60px;
+}
+.dzeko img {
+	margin: 20px;
+	height: 60px;
+	width: 60px;
+}
+.bottom a {
+	color: darkorange;
+	text-decoration: none;
+}
